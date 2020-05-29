@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA76E0AA-8FD3-4871-831F-960F89F81B22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChuongTrinhQuanLySinhVien</RootNamespace>
+    <AssemblyName>ChuongTrinhQuanLySinhVien</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BangDiemCuaSV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BangDiemCuaSV.Designer.cs">
+      <DependentUpon>BangDiemCuaSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangDiemTheoHK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BangDiemTheoHK.Designer.cs">
+      <DependentUpon>BangDiemTheoHK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangDiemTheoDS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BangDiemTheoDS.Designer.cs">
+      <DependentUpon>BangDiemTheoDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaDiem.Designer.cs">
+      <DependentUpon>SuaDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemDiem.Designer.cs">
+      <DependentUpon>ThemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiemCuaSinhVien.cs" />
+    <Compile Include="DiemCuaSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemCuaSV.Designer.cs">
+      <DependentUpon>DiemCuaSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemCuaSVTheoDanhSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemCuaSVTheoDanhSach.Designer.cs">
+      <DependentUpon>DiemCuaSVTheoDanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemThanhPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemThanhPhan.Designer.cs">
+      <DependentUpon>DiemThanhPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemCuaSVTheoHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemCuaSVTheoHocKy.Designer.cs">
+      <DependentUpon>DiemCuaSVTheoHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLSVDB.cs" />
+    <Compile Include="ThongTinSinhVien.cs" />
+    <EmbeddedResource Include="BangDiemCuaSV.resx">
+      <DependentUpon>BangDiemCuaSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangDiemTheoHK.resx">
+      <DependentUpon>BangDiemTheoHK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangDiemTheoDS.resx">
+      <DependentUpon>BangDiemTheoDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaDiem.resx">
+      <DependentUpon>SuaDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemDiem.resx">
+      <DependentUpon>ThemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemCuaSV.resx">
+      <DependentUpon>DiemCuaSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemCuaSVTheoDanhSach.resx">
+      <DependentUpon>DiemCuaSVTheoDanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemThanhPhan.resx">
+      <DependentUpon>DiemThanhPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemCuaSVTheoHocKy.resx">
+      <DependentUpon>DiemCuaSVTheoHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
