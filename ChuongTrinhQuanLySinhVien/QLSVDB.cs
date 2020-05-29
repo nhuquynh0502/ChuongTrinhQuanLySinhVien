@@ -11,7 +11,9 @@
             : base("name=QLSVDB1")
         {
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual DbSet<DiemCuaSinhVien> DiemCuaSinhViens { get; set; }
         public virtual DbSet<ThongTinSinhVien> ThongTinSinhViens { get; set; }
 
