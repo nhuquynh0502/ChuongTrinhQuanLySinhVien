@@ -18,6 +18,7 @@ namespace ChuongTrinhQuanLySinhVien
         public DiemThanhPhan()
         {
             InitializeComponent();
+            //khii yihi 
         }
 
         public DiemThanhPhan(DiemCuaSinhVien diem)
